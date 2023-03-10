@@ -124,16 +124,16 @@ import (
 	tokenkeeper "github.com/irisnet/irismod/modules/token/keeper"
 	tokentypes "github.com/irisnet/irismod/modules/token/types"
 
-	"github.com/gridiron-zone/fury/address"
-	gridironante "github.com/gridiron-zone/fury/ante"
-	gridappparams "github.com/gridiron-zone/fury/app/params"
-	"github.com/gridiron-zone/fury/lite"
-	"github.com/gridiron-zone/fury/modules/guardian"
-	guardiankeeper "github.com/gridiron-zone/fury/modules/guardian/keeper"
-	guardiantypes "github.com/gridiron-zone/fury/modules/guardian/types"
-	"github.com/gridiron-zone/fury/modules/mint"
-	mintkeeper "github.com/gridiron-zone/fury/modules/mint/keeper"
-	minttypes "github.com/gridiron-zone/fury/modules/mint/types"
+	"github.com/fury-zone/fury/address"
+	furyante "github.com/fury-zone/fury/ante"
+	furyappparams "github.com/fury-zone/fury/app/params"
+	"github.com/fury-zone/fury/lite"
+	"github.com/fury-zone/fury/modules/guardian"
+	guardiankeeper "github.com/fury-zone/fury/modules/guardian/keeper"
+	guardiantypes "github.com/fury-zone/fury/modules/guardian/types"
+	"github.com/fury-zone/fury/modules/mint"
+	mintkeeper "github.com/fury-zone/fury/modules/mint/keeper"
+	minttypes "github.com/fury-zone/fury/modules/mint/types"
 
 	"github.com/irisnet/irismod/modules/farm"
 	farmkeeper "github.com/irisnet/irismod/modules/farm/keeper"
@@ -326,7 +326,7 @@ func init() {
 
 	nativeToken = tokentypes.Token{
 		Symbol:        "fury",
-		Name:          "Gridiron staking token",
+		Name:          "Fury staking token",
 		Scale:         6,
 		MinUnit:       "ufury",
 		InitialSupply: 2000000000,
@@ -372,7 +372,7 @@ func NewGridApp(
 	skipUpgradeHeights map[int64]bool,
 	homePath string,
 	invCheckPeriod uint,
-	encodingConfig gridappparams.EncodingConfig,
+	encodingConfig furyappparams.EncodingConfig,
 	appOpts servertypes.AppOptions,
 	baseAppOptions ...func(*baseapp.BaseApp),
 ) *GridApp {
@@ -935,8 +935,8 @@ func NewGridApp(
 	app.MountTransientStores(tkeys)
 	app.MountMemoryStores(memKeys)
 
-	anteHandler, err := gridironante.NewAnteHandler(
-		gridironante.HandlerOptions{
+	anteHandler, err := furyante.NewAnteHandler(
+		furyante.HandlerOptions{
 			HandlerOptions: ante.HandlerOptions{
 				AccountKeeper:   app.AccountKeeper,
 				BankKeeper:      app.BankKeeper,

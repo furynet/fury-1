@@ -18,7 +18,7 @@ After FURY Hub 1.0 upgrade of mainnet, **Nyancat Testnet** starts to operate as 
 
 ### Start node from genesis
 ::tip 
-You must use Gridiron [v1.1.1](https://github.com/gridiron-zone/fury/releases/tag/v1.1.1)[ ](https://github.com/gridiron-zone/fury/releases/tag/v1.0.1) to initialize your node::
+You must use Fury [v1.1.1](https://github.com/fury-zone/fury/releases/tag/v1.1.1)[ ](https://github.com/fury-zone/fury/releases/tag/v1.0.1) to initialize your node::
 
 ```bash
 # init node

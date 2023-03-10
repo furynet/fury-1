@@ -41,7 +41,7 @@ this command lets you set the number of coins. Make sure this account has some u
 :::
 
 ```bash
-fury add-genesis-account $(fury keys show MyValidator --address) 150000000ugrid
+fury add-genesis-account $(fury keys show MyValidator --address) 150000000ufury
 ```
 
 ### fury gentx
@@ -49,7 +49,7 @@ fury add-genesis-account $(fury keys show MyValidator --address) 150000000ugrid
 Generate the transaction that creates your validator. The gentxs are stored in `~/.fury/config/gentx/`
 
 ```bash
-fury gentx MyValidator 100000000ugrid --chain-id=testing 
+fury gentx MyValidator 100000000ufury --chain-id=testing 
 ```
 
 ### fury collect-gentxs
@@ -148,26 +148,26 @@ build/nodecluster/
 │   ├── fury
 │   │   ├── config
 │   │   └── data
-│   └── gridcli
+│   └── furycli
 │       ├── key_seed.json
 │       └── keys
 ├── node1
 │   ├── fury
 │   │   ├── config
 │   │   └── data
-│   └── gridcli
+│   └── furycli
 │       └── key_seed.json
 ├── node2
 │   ├── fury
 │   │   ├── config
 │   │   └── data
-│   └── gridcli
+│   └── furycli
 │       └── key_seed.json
 └── node3
     ├── fury
     │   ├── config
     │   └── data
-    └── gridcli
+    └── furycli
         └── key_seed.json
 ```
 
@@ -181,10 +181,10 @@ This command creates a 4-node network using the ubuntu:16.04 docker image. The p
 
 | Node      | P2P Port | RPC Port |
 | --------- | -------- | -------- |
-| gridnode0 | 26656    | 26657    |
-| gridnode1 | 26659    | 26660    |
-| gridnode2 | 26661    | 26662    |
-| gridnode3 | 26663    | 26664    |
+| furynode0 | 26656    | 26657    |
+| furynode1 | 26659    | 26660    |
+| furynode2 | 26661    | 26662    |
+| furynode3 | 26663    | 26664    |
 
 To update the binary, just rebuild it and restart the nodes:
 

@@ -21,7 +21,7 @@ All routes are configured under the following fields in `~/.fury/config/app.toml
 
 ### Legacy REST API Routes
 
-The REST routes present in Gridiron v0.16 and earlier are marked as deprecated via a [HTTP deprecation header](https://tools.ietf.org/id/draft-dalal-deprecation-header-01.html). They are still maintained to keep backwards compatibility, but will be removed after a few versions.
+The REST routes present in Fury v0.16 and earlier are marked as deprecated via a [HTTP deprecation header](https://tools.ietf.org/id/draft-dalal-deprecation-header-01.html). They are still maintained to keep backwards compatibility, but will be removed after a few versions.
 
 For application developers, Legacy REST API routes needs to be wired up to the REST server, this is done by calling the `RegisterRESTRoutes` function on the ModuleManager.
 
@@ -349,7 +349,7 @@ Where the GRIDhub address prefix uses `did:fury:aa` instead, which affects the f
 - value.msg.value.from_adress
 - value.msg.value.to_address
 
-Denom uses `ufury` instead (1grid = 10<sup>6</sup>ufury), which affects fields:
+Denom uses `ufury` instead (1fury = 10<sup>6</sup>ufury), which affects fields:
 
 - value.msg.value.amount.denom
 - value.fee.amount.denom
@@ -380,7 +380,7 @@ curl -X POST "http://localhost:1317/txs" -H "accept: application/json" -H "Conte
       "height": "5",
       "txhash": "E663768B616B1ACD2912E47C36FEBC7DB0E0974D6DB3823D4C656E0EAB8C679D",
       "data": "0A060A0473656E64",
-      "raw_log": "[{\"events\":[{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"send\"},{\"key\":\"sender\",\"value\":\"fury:fury:aa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn\"},{\"key\":\"module\",\"value\":\"bank\"}]},{\"type\":\"transfer\",\"attributes\":[{\"key\":\"recipient\",\"value\":\"fury:fury:aa1w976a5jrhsj06dqmrh2x9qxzel74qtcmapklxc\"},{\"key\":\"sender\",\"value\":\"fury:fury:aa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn\"},{\"key\":\"amount\",\"value\":\"1000000ugrid\"}]}]}]",
+      "raw_log": "[{\"events\":[{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"send\"},{\"key\":\"sender\",\"value\":\"fury:fury:aa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn\"},{\"key\":\"module\",\"value\":\"bank\"}]},{\"type\":\"transfer\",\"attributes\":[{\"key\":\"recipient\",\"value\":\"fury:fury:aa1w976a5jrhsj06dqmrh2x9qxzel74qtcmapklxc\"},{\"key\":\"sender\",\"value\":\"fury:fury:aa18awn3k70u05tlcul8w2qnl64g002uj4kjn93rn\"},{\"key\":\"amount\",\"value\":\"1000000ufury\"}]}]}]",
       "logs": [
           {
               "events": [
@@ -414,7 +414,7 @@ curl -X POST "http://localhost:1317/txs" -H "accept: application/json" -H "Conte
                           },
                           {
                               "key": "amount",
-                              "value": "1000000ugrid"
+                              "value": "1000000ufury"
                           }
                       ]
                   }

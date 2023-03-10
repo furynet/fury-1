@@ -1,10 +1,10 @@
 # FURY
 
-![Banner](https://raw.githubusercontent.com/gridiron-zone/fury/master/docs/pics/fury.jpg)
+![Banner](https://raw.githubusercontent.com/fury-zone/fury/master/docs/pics/fury.jpg)
 
-[![License](https://img.shields.io/github/license/gridiron-zone/fury.svg)](https://github.com/gridiron-zone/fury/blob/master/LICENSE)
-[![Version](https://img.shields.io/github/tag/gridiron-zone/fury.svg)](https://github.com/gridiron-zone/fury/releases)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gridiron-zone/fury)](https://goreportcard.com/report/github.com/gridiron-zone/fury)
+[![License](https://img.shields.io/github/license/fury-zone/fury.svg)](https://github.com/fury-zone/fury/blob/master/LICENSE)
+[![Version](https://img.shields.io/github/tag/fury-zone/fury.svg)](https://github.com/fury-zone/fury/releases)
+[![Go Report Card](https://goreportcard.com/badge/github.com/fury-zone/fury)](https://goreportcard.com/report/github.com/fury-zone/fury)
 [![Forum](https://img.shields.io/discourse/https/forum.irisnet.org/topics.svg)](https://forum.irisnet.org/)
 
 FURY aims to establish a technology foundation for the FURY Network, to facilitate the construction of the next-generation of distributed sports and gaming applications. By incorporating a comprehensive service infrastructure and an enhanced IBC protocol into the Tendermint & Cosmos stack, FURY enables service interoperability as well as token transfers across an internet of blockchains.

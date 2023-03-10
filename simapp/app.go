@@ -114,14 +114,14 @@ import (
 	tokenkeeper "github.com/irisnet/irismod/modules/token/keeper"
 	tokentypes "github.com/irisnet/irismod/modules/token/types"
 
-	"github.com/gridiron-zone/fury/address"
-	"github.com/gridiron-zone/fury/lite"
-	"github.com/gridiron-zone/fury/modules/guardian"
-	guardiankeeper "github.com/gridiron-zone/fury/modules/guardian/keeper"
-	guardiantypes "github.com/gridiron-zone/fury/modules/guardian/types"
-	"github.com/gridiron-zone/fury/modules/mint"
-	mintkeeper "github.com/gridiron-zone/fury/modules/mint/keeper"
-	minttypes "github.com/gridiron-zone/fury/modules/mint/types"
+	"github.com/fury-zone/fury/address"
+	"github.com/fury-zone/fury/lite"
+	"github.com/fury-zone/fury/modules/guardian"
+	guardiankeeper "github.com/fury-zone/fury/modules/guardian/keeper"
+	guardiantypes "github.com/fury-zone/fury/modules/guardian/types"
+	"github.com/fury-zone/fury/modules/mint"
+	mintkeeper "github.com/fury-zone/fury/modules/mint/keeper"
+	minttypes "github.com/fury-zone/fury/modules/mint/types"
 
 	"github.com/irisnet/irismod/modules/farm"
 	farmkeeper "github.com/irisnet/irismod/modules/farm/keeper"
@@ -306,7 +306,7 @@ func init() {
 
 	nativeToken = tokentypes.Token{
 		Symbol:        "fury",
-		Name:          "Gridiron staking token",
+		Name:          "Fury staking token",
 		Scale:         6,
 		MinUnit:       "ufury",
 		InitialSupply: 2000000000,
@@ -908,8 +908,8 @@ func NewSimApp(
 }
 
 // MakeCodecs constructs the *std.Codec and *codec.LegacyAmino instances used by
-// gridapp. It is useful for tests and clients who do not want to construct the
-// full gridapp
+// furyapp. It is useful for tests and clients who do not want to construct the
+// full furyapp
 func MakeCodecs() (codec.Codec, *codec.LegacyAmino) {
 	config := MakeTestEncodingConfig()
 	return config.Codec, config.Amino

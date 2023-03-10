@@ -23,13 +23,13 @@ GRIDhub introduce two types of privileged system user controlled by foundations,
     Add Profiler (Genesis Profiler account only)
 
     ```bash
-    fury tx guardian add-profiler --address=<profiler-address> --description=<profiler-description> --chain-id=fury --from=<key-name> --fees=0.3grid
+    fury tx guardian add-profiler --address=<profiler-address> --description=<profiler-description> --chain-id=fury --from=<key-name> --fees=0.3fury
     ```
 
     Add Trustee (Genesis Trustee account only)
 
     ```bash
-    fury tx guardian add-trustee --address=<trustee-address> --description=<trustee-description> --chain-id=fury --from=<key-name> --fees=0.3grid
+    fury tx guardian add-trustee --address=<trustee-address> --description=<trustee-description> --chain-id=fury --from=<key-name> --fees=0.3fury
     ```
 
 2. Query Profiler and Trustee list
@@ -55,7 +55,7 @@ GRIDhub introduce two types of privileged system user controlled by foundations,
     Service fee exempted
 
     ```bash
-    fury tx service call --def-chain-id=<def-chain-id> --service-name=<service-name> --method-id=<method-id> --bind-chain-id=<bind-chain-id> --provider=<provider-address> --service-fee=1grid --request-data=<request-data> --chain-id=fury --from=<key-name> --fees=0.3grid --profiling=true
+    fury tx service call --def-chain-id=<def-chain-id> --service-name=<service-name> --method-id=<method-id> --bind-chain-id=<bind-chain-id> --provider=<provider-address> --service-fee=1fury --request-data=<request-data> --chain-id=fury --from=<key-name> --fees=0.3fury --profiling=true
     ```
 
 5. Trustee to be the destination address of `CommunityTaxUsage` proposal
@@ -67,11 +67,11 @@ GRIDhub introduce two types of privileged system user controlled by foundations,
     Delete Profiler (Genesis Trustee account only)
 
     ```bash
-    fury tx guardian delete-profiler --chain-id=fury --from=<key-name> --fees=0.3grid --address=<profiler-address>
+    fury tx guardian delete-profiler --chain-id=fury --from=<key-name> --fees=0.3fury --address=<profiler-address>
     ```
 
     Delete Trustee (Genesis Trustee account only)
 
     ```bash
-    fury tx guardian delete-trustee --chain-id=fury --from=<key-name> --fees=0.3grid --address=<trustee-address>
+    fury tx guardian delete-trustee --chain-id=fury --from=<key-name> --fees=0.3fury --address=<trustee-address>
     ```

@@ -62,7 +62,7 @@ fury tx service define \
     --schemas=<schemas content or path/to/schemas.json> \
     --chain-id=fury \
     --from=<key-name> \
-    --fees=0.3grid
+    --fees=0.3fury
 ```
 
 ### Schemas content example
@@ -141,7 +141,7 @@ fury tx service bind [flags]
 | --------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------- | -------- |
 | --service-name  |         | Service name                                                                                                                  | Yes      |
 | --deposit       |         | Deposit of the binding                                                                                                        | Yes      |
-| --pricing       |         | Pricing content or file path, which is an instance of [Gridiron Service Pricing JSON Schema](../features/service-pricing.json) | Yes      |
+| --pricing       |         | Pricing content or file path, which is an instance of [Fury Service Pricing JSON Schema](../features/service-pricing.json) | Yes      |
 | --qos           |         | Minimum response time                                                                                                         | Yes      |
 | --options       |         | Non-functional requirements options                                                                                           | Yes      |
 | --provider      |         | Provider address, default to the owner                                                                                        |          |
@@ -153,20 +153,20 @@ The deposit needs to satisfy the minimum deposit requirement, which is the maxim
 ```bash
 fury tx service bind \
     --service-name=<service name> \
-    --deposit=10000grid \
+    --deposit=10000fury \
     --pricing=<pricing content or path/to/pricing.json> \
     --qos=50 \
     --options=<non-functional requirements options content or path/to/options.json> \
     --chain-id=fury \
     --from=<key-name> \
-    --fees=0.3grid
+    --fees=0.3fury
 ```
 
 ### Pricing content example
 
 ```json
 {
-    "price": "1grid"
+    "price": "1fury"
 }
 ```
 
@@ -205,7 +205,7 @@ fury tx service update-binding [service-name] [provider-address] [flags]
 | Name, shorthand | Default | Description                                                                                                                                       | Required |
 | --------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | --deposit       |         | Deposit added for the binding, not updated if empty                                                                                               |          |
-| --pricing       |         | Pricing content or file path, which is an instance of [Gridiron Service Pricing JSON Schema](../features/service-pricing.md), not updated if empty |          |
+| --pricing       |         | Pricing content or file path, which is an instance of [Fury Service Pricing JSON Schema](../features/service-pricing.md), not updated if empty |          |
 | --qos           |         | Minimum response time, not updated if set to 0                                                                                                    |          |
 | --options       |         | Non-functional requirements options                                                                                                               |          |
 
@@ -215,13 +215,13 @@ The following example updates the service binding with the additional 10 FURY de
 
 ```bash
 fury tx service update-binding <service-name> <provider-address> \
-    --deposit=10grid \
+    --deposit=10fury \
     --options=<non-functional requirements options content or path/to/options.json> \
-    --pricing='{"price":"1grid"}' \
+    --pricing='{"price":"1fury"}' \
     --qos=50 \
     --chain-id=<chain-id> \
     --from=<key name> \
-    --fees=0.3grid
+    --fees=0.3fury
 ```
 
 ## fury tx service set-withdraw-addr
@@ -267,7 +267,7 @@ fury tx service enable [service-name] [provider-address] [flags]
 The following example enables an unavailable service binding with the additional 10 FURY deposit.
 
 ```bash
-fury tx service enable <service name> <provider-address> --chain-id=fury --from=<key-name> --fees=0.3grid --deposit=10grid
+fury tx service enable <service name> <provider-address> --chain-id=fury --from=<key-name> --fees=0.3fury --deposit=10fury
 ```
 
 ## fury tx service refund-deposit
@@ -283,7 +283,7 @@ fury tx service refund-deposit [service-name] [provider-address] [flags]
 Before refunding, you should [disable](#fury-tx-service-disable) the service binding first.
 
 ```bash
-fury tx service refund-deposit <service name> <provider-address> --chain-id=fury --from=<key-name> --fees=0.3grid
+fury tx service refund-deposit <service name> <provider-address> --chain-id=fury --from=<key-name> --fees=0.3fury
 ```
 
 ## fury tx service call
@@ -313,7 +313,7 @@ fury tx service call [flags]
 fury tx service call \
     --service-name=<service name> \
     --providers=<provider list> \
-    --service-fee-cap=1grid \
+    --service-fee-cap=1fury \
     --data=<request input or path/to/input.json> \
     --timeout=100 \
     --repeated \
@@ -321,7 +321,7 @@ fury tx service call \
     --total=100 \
     --chain-id=fury \
     --from=<key name> \
-    --fees=0.3grid
+    --fees=0.3fury
 ```
 
 ### Input example
@@ -398,7 +398,7 @@ fury tx service respond [flags]
 | Name, shorthand | Default | Description                                                                                                                                | Required |
 | --------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
 | --request-id    |         | ID of the request to respond to                                                                                                            | Yes      |
-| --result        |         | Content or file path of the response result, which is an instance of [Gridiron Service Result JSON Schema](../features/service-result.json) | Yes      |
+| --result        |         | Content or file path of the response result, which is an instance of [Fury Service Result JSON Schema](../features/service-result.json) | Yes      |
 | --data          |         | Content or file path of the response output, which is an Output JSON Schema instance                                                       |          |
 
 ### Respond to a service request
@@ -410,7 +410,7 @@ fury tx service respond \
     --data=<response output or path/to/output.json>
     --chain-id=fury \
     --from=<key-name> \
-    --fees=0.3grid
+    --fees=0.3fury
 ```
 
 :::tip
@@ -506,13 +506,13 @@ fury tx service update [request-context-id] [flags]
 ```bash
 fury tx service update <request-context-id> \
     --providers=<provider list> \
-    --service-fee-cap=1grid \
+    --service-fee-cap=1fury \
     --timeout=0 \
     --frequency=150 \
     --total=100 \
     --chain-id=fury \
     --from=<key name> \
-    --fees=0.3grid
+    --fees=0.3fury
 ```
 
 ## fury tx service pause

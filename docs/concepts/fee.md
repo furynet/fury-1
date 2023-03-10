@@ -1,9 +1,9 @@
 # Fee Model
 
-Specify the maximum fee you want to pay by `--fee`. Gas is the unit used to measure how many resources needed to execute the transaction. Specify the maximum gas limit by `-—gas`. If the maximum gas is too small, it won't be enough for executing the transaction. If the fee is too low, fee paid for each unit of gas will be less than the minimum gas-price and validators won't execute the transaction neither. The fee(minimum unit)/gas must be greater than 6*10^4 ufury. We recommend that you set your maximum gas to 50000 and set your maximum fee to 0.3grid. Fee will be consumed according to actual gas used and spare fee will be reimbursed to users.
+Specify the maximum fee you want to pay by `--fee`. Gas is the unit used to measure how many resources needed to execute the transaction. Specify the maximum gas limit by `-—gas`. If the maximum gas is too small, it won't be enough for executing the transaction. If the fee is too low, fee paid for each unit of gas will be less than the minimum gas-price and validators won't execute the transaction neither. The fee(minimum unit)/gas must be greater than 6*10^4 ufury. We recommend that you set your maximum gas to 50000 and set your maximum fee to 0.3fury. Fee will be consumed according to actual gas used and spare fee will be reimbursed to users.
 
 :::tip
-Certain types of transactions may consume more gas (e.g. creating validators), so it is recommended to set `--gas=100000 --fees=0.6grid` to ensure the smooth execution of transactions.
+Certain types of transactions may consume more gas (e.g. creating validators), so it is recommended to set `--gas=100000 --fees=0.6fury` to ensure the smooth execution of transactions.
 :::
 
 ## Fee
@@ -26,7 +26,7 @@ The total gas needed for executing the transaction is the sum of gas needed for 
 Example
 
 ```bash
-fury tx bank send <from-address> <to-address>  1grid --fees=0.3grid --gas=50000 --chain-id=fury --from=<key-name>
+fury tx bank send <from-address> <to-address>  1fury --fees=0.3fury --gas=50000 --chain-id=fury --from=<key-name>
 ```
 
-This example is a transfer transaction. The maximum fee `--fee` is set to be 0.3grid and the maximum gas `--gas` is set to be 50000. Therefore, the gas price here is 0.000006grid/Gas. Suppose that 10000 gas is used to execute the transaction, then 0.06grid will be paid to validators and left 0.24grid will be refunded to user.
+This example is a transfer transaction. The maximum fee `--fee` is set to be 0.3fury and the maximum gas `--gas` is set to be 50000. Therefore, the gas price here is 0.000006fury/Gas. Suppose that 10000 gas is used to execute the transaction, then 0.06fury will be paid to validators and left 0.24fury will be refunded to user.

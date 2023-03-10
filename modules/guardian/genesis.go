@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/gridiron-zone/fury/modules/guardian/keeper"
-	"github.com/gridiron-zone/fury/modules/guardian/types"
+	"github.com/fury-zone/fury/modules/guardian/keeper"
+	"github.com/fury-zone/fury/modules/guardian/types"
 )
 
 // InitGenesis stores genesis data

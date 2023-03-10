@@ -239,7 +239,7 @@ fury tx staking create-validator [flags]
 ### Create a validator
 
 ```bash
-fury tx staking create-validator --chain-id=fury --from=<key-name> --fees=0.3grid --pubkey=<validator-pubKey> --commission-rate=0.1 --amount=100grid --moniker=<validator-name>
+fury tx staking create-validator --chain-id=fury --from=<key-name> --fees=0.3fury --pubkey=<validator-pubKey> --commission-rate=0.1 --amount=100fury --moniker=<validator-name>
 ```
 
 :::tip
@@ -269,7 +269,7 @@ fury tx staking edit-validator [flags]
 ### Edit validator information
 
 ```bash
-fury tx staking edit-validator --from=<key-name> --chain-id=fury --fees=0.3grid --commission-rate=0.10 --moniker=<validator-name>
+fury tx staking edit-validator --from=<key-name> --chain-id=fury --fees=0.3fury --commission-rate=0.10 --moniker=<validator-name>
 ```
 
 ### Upload validator avatar
@@ -285,7 +285,7 @@ fury tx staking delegate [validator-addr] [amount] [flags]
 ```
 
 ```bash
-fury tx staking delegate <iva...> <amount> --chain-id=fury --from=<key-name> --fees=0.3grid
+fury tx staking delegate <iva...> <amount> --chain-id=fury --from=<key-name> --fees=0.3fury
 ```
 
 ## fury tx staking unbond
@@ -299,7 +299,7 @@ fury tx staking unbond [validator-addr] [amount] [flags]
 ### Unbond some tokens from a validator
 
 ```bash
-fury tx staking unbond <iva...> 10grid --from=<key-name> --chain-id=fury --fees=0.3grid
+fury tx staking unbond <iva...> 10fury --from=<key-name> --chain-id=fury --fees=0.3fury
 ```
 
 ## fury tx staking redelegate
@@ -317,5 +317,5 @@ fury tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount] [f
 ### Redelegate some tokens to another validator
 
 ```bash
-fury tx staking redelegate <iva...> <iva...> 10grid --chain-id=fury --from=<key-name> --fees=0.3grid
+fury tx staking redelegate <iva...> <iva...> 10fury --chain-id=fury --from=<key-name> --fees=0.3fury
 ```

@@ -4,7 +4,7 @@ package fury.guardian;
 import "guardian/guardian.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/gridiron-zone/fury/modules/guardian/types";
+option go_package = "github.com/fury-zone/fury/modules/guardian/types";
 
 // GenesisState defines the guardian module's genesis state
 message GenesisState {

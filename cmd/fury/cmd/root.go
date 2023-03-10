@@ -33,8 +33,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	"github.com/gridiron-zone/fury/app"
-	"github.com/gridiron-zone/fury/app/params"
+	"github.com/fury-zone/fury/app"
+	"github.com/fury-zone/fury/app/params"
 )
 
 // NewRootCmd creates a new root command for simd. It is called once in the
@@ -250,7 +250,7 @@ func (ac appCreator) newApp(logger log.Logger, db dbm.DB, traceStore io.Writer, 
 	)
 }
 
-// createGridappAndExport creates a new gridapp (optionally at a given height) and exports state.
+// createGridappAndExport creates a new furyapp (optionally at a given height) and exports state.
 func (ac appCreator) appExport(
 	logger log.Logger,
 	db dbm.DB,
@@ -272,7 +272,7 @@ func (ac appCreator) appExport(
 		loadLatest = true
 	}
 
-	gridApp := app.NewGridApp(
+	furyApp := app.NewGridApp(
 		logger,
 		db,
 		traceStore,
@@ -285,10 +285,10 @@ func (ac appCreator) appExport(
 	)
 
 	if height != -1 {
-		if err := gridApp.LoadHeight(height); err != nil {
+		if err := furyApp.LoadHeight(height); err != nil {
 			return servertypes.ExportedApp{}, err
 		}
 	}
 
-	return gridApp.ExportAppStateAndValidators(forZeroHeight, jailAllowedAddrs)
+	return furyApp.ExportAppStateAndValidators(forZeroHeight, jailAllowedAddrs)
 }

@@ -78,7 +78,7 @@ The pricing object specifies how the provider charges for its service; it must c
 
 ```json
 {
-  "price": "0.1grid",
+  "price": "0.1fury",
   "promotions_by_time": [
     {
       "start_time": "2020-01-01T00:00:00Z",
@@ -181,7 +181,7 @@ When a request context is successfully created, a `context id` is returned to th
 
 ```bash
 # create a repeated request context, with no callback
-fury tx service call --service-name=<service name> --data=<request input> --providers=<provider list> --service-fee-cap=1grid --timeout 50 --repeated --frequency=50 --total=100
+fury tx service call --service-name=<service name> --data=<request input> --providers=<provider list> --service-fee-cap=1fury --timeout 50 --repeated --frequency=50 --total=100
 
 # update an existing request context
 fury tx service update <request-context-id> --frequency=20 --total=200

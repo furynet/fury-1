@@ -16,10 +16,10 @@ This module is mainly used to transfer coins between accounts, query account bal
 
 2. Transfer between accounts
 
-    For example, transfer 10grid from account A to account B:
+    For example, transfer 10fury from account A to account B:
 
     ```bash
-    fury tx bank send [A] [B] [10grid] --fees=0.3grid --chain-id=fury
+    fury tx bank send [A] [B] [10fury] --fees=0.3fury --chain-id=fury
     ```
 
     GRIDhub supports multiple tokens in circulation, and in the future GRIDhub will be able to include multiple tokens in one transaction.
@@ -29,7 +29,7 @@ This module is mainly used to transfer coins between accounts, query account bal
     To improve account security, GRIDhub supports offline signing of transactions to protect the account's private key. In any transaction, you can build an unsigned transaction using the flag --generate-only. Take transfer transaction as an example:
 
     ```bash
-    fury tx bank send [from_key_or_address] [to_address] [amount]  --fees=0.3grid --generate-only
+    fury tx bank send [from_key_or_address] [to_address] [amount]  --fees=0.3fury --generate-only
     ```
 
     Return the built transaction with empty signatures:

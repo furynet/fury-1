@@ -30,7 +30,7 @@ fury tx oracle create \
     --service-name="test-service" \
     --input={request-data} \
     --providers="faa1hp29kuh22vpjjlnctmyml5s75evsnsd8r4x0mm,faa15rurzhkemsgfm42dnwhafjdv5s8e2pce0ku8ya" \
-    --service-fee-cap=1grid \
+    --service-fee-cap=1fury \
     --timeout=2 \
     --frequency=10 \
     --threshold=1 \
@@ -38,7 +38,7 @@ fury tx oracle create \
     --value-json-path="high" \
     --chain-id="fury-test" \
     --from=node0 \
-    --fees=0.3grid \
+    --fees=0.3fury \
     --broadcast-mode=block
 ```
 
@@ -50,7 +50,7 @@ After the `Feed` is created, the collection task is in the `paused` state, and n
 fury tx oracle start test-feed \
     --chain-id="fury-test" \
     --from=node0 \
-    --fees=0.3grid \
+    --fees=0.3fury \
     --broadcast-mode=block
 ```
 
@@ -62,7 +62,7 @@ Since `Feed` cannot be deleted once it is created, it will consume the balance o
 fury tx oracle pause test-feed \
     --chain-id="fury-test" \
     --from=node0 \
-    --fees=0.3grid \
+    --fees=0.3fury \
     --broadcast-mode=block
 ```
 
@@ -74,12 +74,12 @@ You can use the edit command to edit an existing feed to change the data collect
 fury tx oracle edit test-feed \
     --latest-history=5 \
     --providers="faa1r3tyupskwlh07dmhjw70frxzaaaufta37y25yr,faa1ydahnhrhkjh9j9u0jn8p3s272l0ecqj40vra8h" \
-    --service-fee-cap=1grid \
+    --service-fee-cap=1fury \
     --timeout=6 \
     --threshold=5 \
     --chain-id="fury-test" \
     --from=node0 \
-    --fees=0.3grid \
+    --fees=0.3fury \
     --broadcast-mode=block
 ```
 

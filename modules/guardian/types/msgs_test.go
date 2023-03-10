@@ -10,7 +10,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/gridiron-zone/fury/address"
+	"github.com/fury-zone/fury/address"
 )
 
 // nolint: deadcode unused

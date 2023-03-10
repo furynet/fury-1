@@ -27,7 +27,7 @@ fury <command>
 | [start](local-testnet.md#fury-start)                             | Run the full node                                                                                               |
 | [unsafe-reset-all](local-testnet.md#fury-unsafe-reset-all)       | Resets the blockchain database, removes address book files, and resets priv_validator.json to the genesis state |
 | [tendermint](local-testnet.md#fury-tendermint)                   | Tendermint subcommands                                                                                          |
-| [testnet](local-testnet.md#build-and-init)                       | Initialize files for a Gridiron testnet                                                                          |
+| [testnet](local-testnet.md#build-and-init)                       | Initialize files for a Fury testnet                                                                          |
 | [reset](local-testnet.md#fury-reset)                             | Reset app state to the specified height                                                                         |
 | [export](export.md)                                              | Export state to JSON                                                                                            |
 | version                                                          | Show executable binary version                                                                                  |

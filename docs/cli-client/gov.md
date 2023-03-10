@@ -223,8 +223,8 @@ Where proposal.json contains:
     "title": "Community Pool Spend",
     "description": "Pay me some Atoms!",
     "recipient": "fury:fury:aa1mjk4p68mmulwla3x5uzlgjwsc3zrms448rel3q",
-    "amount": "1000ugrid",
-    "deposit": "1000ugrid"
+    "amount": "1000ufury",
+    "deposit": "1000ufury"
 }
 ```
 
@@ -254,7 +254,7 @@ Where proposal.json contains:
         "value": 105
         }
     ],
-    "deposit": "1000ugrid"
+    "deposit": "1000ufury"
 }
 ```
 
@@ -352,7 +352,7 @@ fury tx gov vote [proposal-id] [option] [flags]
 ### Vote for an active proposal
 
 ```bash
-fury tx gov vote <proposal-id> <option> --from=<key-name> --fees=0.3grid
+fury tx gov vote <proposal-id> <option> --from=<key-name> --fees=0.3fury
 ```
 
 

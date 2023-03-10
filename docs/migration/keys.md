@@ -17,7 +17,7 @@ This way is suitable for users who have lost the mnemonic but saved the db file 
 **1. Use fury v0.16.x to export keystore file**
 
 ```bash
-gridcli keys export test1 --output-file=key.json --home ./gridcli_test 
+furycli keys export test1 --output-file=key.json --home ./furycli_test 
 ```
 
 output:

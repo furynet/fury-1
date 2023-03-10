@@ -32,10 +32,10 @@ Post a random number request to the FURY Hub, the random number will be generate
 
 ```bash
 # without oracle
-fury tx random request --block-interval=100 --from=<key-name> --chain-id=fury --fees=0.3grid
+fury tx random request --block-interval=100 --from=<key-name> --chain-id=fury --fees=0.3fury
 
 # with oracle
-fury tx random request --block-interval=100 --oracle=true --service-fee-cap=1grid --from=<key-name> --chain-id=fury --fees=0.3grid
+fury tx random request --block-interval=100 --oracle=true --service-fee-cap=1fury --from=<key-name> --chain-id=fury --fees=0.3fury
 ```
 
 :::tip

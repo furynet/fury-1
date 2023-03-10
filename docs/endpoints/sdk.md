@@ -8,8 +8,8 @@ GRIDhub SDK is a software development kit based on the Endpoint provided by GRID
 
 Available in three languages:
 
-- [fury-sdk-go](https://github.com/gridiron-zone/fury-sdk-go)
-- [fury-sdk-js](https://github.com/gridiron-zone/fury-sdk-js)
+- [fury-sdk-go](https://github.com/fury-zone/fury-sdk-go)
+- [fury-sdk-js](https://github.com/fury-zone/fury-sdk-js)
 - fury-sdk-java (coming soon)
 
 ## Design Goals and Concepts
@@ -24,6 +24,6 @@ The SDK mainly implements the encapsulation of the functions of GRIDhub modules,
 
 The document link of GRIDhub SDKs is as follows:
 
-- [Go SDK docs](https://github.com/gridiron-zone/fury-sdk-go/blob/master/README.md)
-- [JavaScript SDK docs](https://github.com/gridiron-zone/fury-sdk-js/blob/master/README.md)
+- [Go SDK docs](https://github.com/fury-zone/fury-sdk-go/blob/master/README.md)
+- [JavaScript SDK docs](https://github.com/fury-zone/fury-sdk-js/blob/master/README.md)
 - Java SDK docs (coming soon)

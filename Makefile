@@ -155,7 +155,7 @@ test-cover:
 format:
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs gofmt -w -s
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs misspell -w
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs goimports -w -local github.com/gridiron-zone/fury
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./lite/statik/statik.go" -not -path "*.pb.go" | xargs goimports -w -local github.com/fury-zone/fury
 
 benchmark:
 	@go test -mod=readonly -bench=. ./...
@@ -165,7 +165,7 @@ benchmark:
 ### Local validator nodes using docker and docker-compose
 
 testnet-init:
-	@if ! [ -f build/nodecluster/node0/fury/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/home fanfury/fanfury:latest fury testnet --v 4 --output-dir /home/nodecluster --chain-id gridstaging-1000 --keyring-backend test --starting-ip-address 192.168.10.2 ; fi
+	@if ! [ -f build/nodecluster/node0/fury/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/home fanfury/fanfury:latest fury testnet --v 4 --output-dir /home/nodecluster --chain-id furystaging-1000 --keyring-backend test --starting-ip-address 192.168.10.2 ; fi
 	@echo "To install jq command, please refer to this page: https://stedolan.github.io/jq/download/"
 	@jq '.app_state.auth.accounts+= [{"@type":"/cosmos.auth.v1beta1.BaseAccount","address":"fury:fury:aa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","pub_key":null,"account_number":"0","sequence":"0"}] | .app_state.bank.balances+= [{"address":"fury:fury:aa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx","coins":[{"denom":"ufury","amount":"1000000000000"}]}]' build/nodecluster/node0/fury/config/genesis.json > build/genesis_temp.json ;
 	@sudo cp build/genesis_temp.json build/nodecluster/node0/fury/config/genesis.json
@@ -174,7 +174,7 @@ testnet-init:
 	@sudo cp build/genesis_temp.json build/nodecluster/node3/fury/config/genesis.json
 	@rm build/genesis_temp.json
 	@echo "Faucet address: fury:fury:aa1ljemm0yznz58qxxs8xyak7fashcfxf5lgl4zjx" ;
-	@echo "Faucet coin amount: 1000000000000ugrid"
+	@echo "Faucet coin amount: 1000000000000ufury"
 	@echo "Faucet key seed: tube lonely pause spring gym veteran know want fury tired taxi such same mesh charge orient bracket ozone concert once good quick dry boss"
 
 testnet-start:

@@ -99,26 +99,26 @@ Example Output:
 - Edit validator
 
 ```bash
-fury tx staking edit-validator --from=<key-name> --chain-id=fury --fees=0.3grid --commission-rate=0.15 --moniker=<new-name>
+fury tx staking edit-validator --from=<key-name> --chain-id=fury --fees=0.3fury --commission-rate=0.15 --moniker=<new-name>
 ```
 
 - Delegate tokens to other validators
 If you just want to be a delegator, you can skip the above steps.
 
 ```bash
-fury tx staking delegate iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke 1000grid --chain-id=fury --from=<key-name> --fees=0.3grid
+fury tx staking delegate iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke 1000fury --chain-id=fury --from=<key-name> --fees=0.3fury
 ```
 
 - Unbond tokens from a validator
 
 ```bash
-fury tx staking unbond iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke 1000grid --chain-id=fury --from=<key-name> --fees=0.3grid
+fury tx staking unbond iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke 1000fury --chain-id=fury --from=<key-name> --fees=0.3fury
 ```
   
 - Redelegate tokens to another validator
 
 ```bash
-fury tx staking redelegate iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke iva1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm 100grid --from mykey --chain-id=fury --from=<key-name> --fees=0.3grid
+fury tx staking redelegate iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke iva1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm 100fury --from mykey --chain-id=fury --from=<key-name> --fees=0.3fury
 ```
 
 For other staking commands, please refer to [stake cli client](../cli-client/staking.md)

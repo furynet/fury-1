@@ -67,7 +67,7 @@ Among them, the parameters available for query for each subspace are as follows:
 
 | key             | description                                      | default                                                         |
 | --------------- | ------------------------------------------------ | --------------------------------------------------------------- |
-| `depositparams` | Related parameters of the deposit mortgage phase | `min_deposit`:    10000000ugrid; `max_deposit_period`: 2d(days) |
+| `depositparams` | Related parameters of the deposit mortgage phase | `min_deposit`:    10000000ufury; `max_deposit_period`: 2d(days) |
 | `votingparams`  | Related parameters of the voting mortgage phase  | `voting_period`: 2d(days)                                       |
 | `tallyparams`   | Related parameters of the voting tally phase     | `quorum`: 0.334; `threshold`: 0.5; `veto_threshold`: 0.334      |
 
@@ -75,7 +75,7 @@ Among them, the parameters available for query for each subspace are as follows:
 
 | key           | description  | default   |
 | ------------- | ------------ | --------- |
-| `ConstantFee` | Constant Fee | 1000ugrid |
+| `ConstantFee` | Constant Fee | 1000ufury |
 
 ## token
 
@@ -117,7 +117,7 @@ AssetParam参数如下：
 | --------------------------- | --------------------------------------------------- | ---------- |
 | `MaxRequestTimeout`         | Maximum service request timeout                     | 100(block) |
 | `MinDepositMultiple`        | Minimum deposit multiple                            | 200        |
-| `MinDeposit`                | Minimum deposit amount                              | 6000ugrid  |
+| `MinDeposit`                | Minimum deposit amount                              | 6000ufury  |
 | `ServiceFeeTax`             | Service rate                                        | 0.1        |
 | `SlashFraction`             | Slash fraction                                      | 0.001      |
 | `ComplaintRetrospect`       | Complaint retrospect                                | 15d        |

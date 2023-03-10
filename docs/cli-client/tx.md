@@ -39,7 +39,7 @@ You can generate any type of txs offline by appending the flag `--generate-only`
 We use a transfer tx in the following examples:
 
 ```bash
-fury tx bank send fury:fury:aa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx fury:fury:aa15uys54epmd2xzhcn32szps56wvev40tt908h62 10grid --chain-id=fury --generate-only
+fury tx bank send fury:fury:aa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx fury:fury:aa15uys54epmd2xzhcn32szps56wvev40tt908h62 10fury --chain-id=fury --generate-only
 ```
 
 The `unsigned.json` should look like:
@@ -168,7 +168,7 @@ No multisig key? [Create one](keys.md#create-a-multisig-key)
 :::
 
 ```bash
-fury tx bank send <from> <to> 10grid --fees=0.3grid --chain-id=fury --from=<multisig-keyname> --generate-only > unsigned.json
+fury tx bank send <from> <to> 10fury --fees=0.3fury --chain-id=fury --from=<multisig-keyname> --generate-only > unsigned.json
 ```
 
 ### Sign the multisig tx

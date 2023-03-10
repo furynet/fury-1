@@ -36,7 +36,7 @@ After setting up `go` correctly, you should be able to compile and run `fury`.
 Make sure that your server can access to google.com because our project depends on some libraries provided by google. (If you are not able to access google.com, you can also try to add a proxy: `export GOPROXY=https://goproxy.io`)
 
 ```bash
-git clone https://github.com/gridiron-zone/fury
+git clone https://github.com/fury-zone/fury
 cd fury
 git checkout <version>
 make install

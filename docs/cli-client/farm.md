@@ -29,7 +29,7 @@ fury tx farm create <Farm Pool Name> [flags]
 | Name, shorthand    | Required | Default | Description                                              |
 | ------------------ | -------- | ------- | -------------------------------------------------------- |
 | --lp-token-denom   | true     |         | The liquidity token accepted by farm pool                |
-| --reward-per-block | true     |         | The reward per block,ex: 1grid,1atom                     |
+| --reward-per-block | true     |         | The reward per block,ex: 1fury,1atom                     |
 | --total-reward     | true     |         | The Total reward for the farm pool                       |
 | --description      | false    | ""      | The simple description of a farm pool                    |
 | --start-height     | true     |         | The start height the farm pool                           |
@@ -48,7 +48,7 @@ fury tx farm adjust <Farm Pool Name> [flags]
 | Name, shorthand     | Required                                  | Default | Description                          |
 | ------------------- | ----------------------------------------- | ------- | ------------------------------------ |
 | --additional-reward | And `--reward-per-block` must choose one  | ""      | Bonuses added to the farm pool       |
-| --reward-per-block  | And `--additional-reward` must choose one | ""      | The reward per block,ex: 1grid,1atom |
+| --reward-per-block  | And `--additional-reward` must choose one | ""      | The reward per block,ex: 1fury,1atom |
 
 ## fury tx farm destroy
 

@@ -48,7 +48,7 @@ fury tx oracle create \
     --service-name="test-service" \
     --input=<request-data> \
     --providers=<provide1_address>,<provider2_address> \
-    --service-fee-cap=1grid \
+    --service-fee-cap=1fury \
     --timeout=2 \
     --frequency=10 \
     --total=10 \
@@ -57,7 +57,7 @@ fury tx oracle create \
     --value-json-path="high" \
     --chain-id=fury \
     --from=node0 \
-    --fees=0.3grid
+    --fees=0.3fury
 ```
 
 ## fury tx oracle start
@@ -71,7 +71,7 @@ fury tx oracle start [feed-name] [flags]
 ### Start a "paused" feed
 
 ```bash
-fury tx oracle start test-feed --chain-id=fury --from=node0 --fees=0.3grid
+fury tx oracle start test-feed --chain-id=fury --from=node0 --fees=0.3fury
 ```
 
 ## fury tx oracle pause
@@ -85,7 +85,7 @@ fury tx oracle pause [feed-name] [flags]
 ### Pause a "running" feed
 
 ```bash
-fury tx oracle pause test-feed --chain-id=fury --from=node0 --fees=0.3grid
+fury tx oracle pause test-feed --chain-id=fury --from=node0 --fees=0.3fury
 ```
 
 ## fury tx oracle edit
@@ -112,7 +112,7 @@ fury tx oracle edit [feed-name] [flags]
 ### Edit an existed feed
 
 ```bash
-fury tx oracle edit test-feed --chain-id=fury --from=node0 --fees=0.3grid --latest-history=5
+fury tx oracle edit test-feed --chain-id=fury --from=node0 --fees=0.3fury --latest-history=5
 ```
 
 ## fury query oracle feed

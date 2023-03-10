@@ -19,9 +19,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/gridiron-zone/fury/modules/guardian/client/cli"
-	"github.com/gridiron-zone/fury/modules/guardian/keeper"
-	"github.com/gridiron-zone/fury/modules/guardian/types"
+	"github.com/fury-zone/fury/modules/guardian/client/cli"
+	"github.com/fury-zone/fury/modules/guardian/keeper"
+	"github.com/fury-zone/fury/modules/guardian/types"
 )
 
 var (
