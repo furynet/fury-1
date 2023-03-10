@@ -9,7 +9,7 @@
 
 FURY aims to establish a technology foundation for the FURY Network, to facilitate the construction of the next-generation of distributed sports and gaming applications. By incorporating a comprehensive service infrastructure and an enhanced IBC protocol into the Tendermint & Cosmos stack, FURY enables service interoperability as well as token transfers across an internet of blockchains.
 
-As the centerpiece of the FURY Network, FURY (a.k.a. GRIDhub) will be the first dedicated sports and gaming hub connecting to the main Cosmos Hub, thus making FURY and the FURY Network an inseparable part of the whole Cosmos network.
+As the centerpiece of the FURY Network, FURY (a.k.a. FURYhub) will be the first dedicated sports and gaming hub connecting to the main Cosmos Hub, thus making FURY and the FURY Network an inseparable part of the whole Cosmos network.
 
 The FURY Network, is a blockchain designed to support the future of sports betting & related gaming by leveraging the modular Cosmos-SDK design. We believe the future will be heavily shaped by many of the values driving the recent wave of crypto and blockchain development: transparency, increased decentralization, and utility that benefits all stakeholders, especially the user-base.
 

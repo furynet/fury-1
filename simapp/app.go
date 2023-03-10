@@ -343,7 +343,7 @@ func DefaultCoinDenomRegex() string {
 	return reDnmString
 }
 
-// NewSimApp returns a reference to an initialized GridApp.
+// NewSimApp returns a reference to an initialized FuryApp.
 func NewSimApp(
 	logger log.Logger,
 	db dbm.DB,
@@ -983,7 +983,7 @@ func (app *SimApp) LegacyAmino() *codec.LegacyAmino {
 	return app.legacyAmino
 }
 
-// AppCodec returns GridApp's app codec.
+// AppCodec returns FuryApp's app codec.
 //
 // NOTE: This is solely to be used for testing purposes as it may be desirable
 // for modules to register their own custom testing types.
@@ -991,7 +991,7 @@ func (app *SimApp) AppCodec() codec.Codec {
 	return app.appCodec
 }
 
-// InterfaceRegistry returns GridApp's InterfaceRegistry
+// InterfaceRegistry returns FuryApp's InterfaceRegistry
 func (app *SimApp) InterfaceRegistry() types.InterfaceRegistry {
 	return app.interfaceRegistry
 }

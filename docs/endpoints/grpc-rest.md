@@ -16,7 +16,7 @@ All routes are configured under the following fields in `~/.fury/config/app.toml
 
 ### gRPC-gateway REST Routes
 
-If, for various reasons, you cannot use gRPC (for example, you are building a web application, and browsers don't support HTTP2 on which gRPC is built), then the GRIDhub offers REST routes via gRPC-gateway.
+If, for various reasons, you cannot use gRPC (for example, you are building a web application, and browsers don't support HTTP2 on which gRPC is built), then the FURYhub offers REST routes via gRPC-gateway.
 
 [gRPC-gateway](https://grpc-ecosystem.github.io/grpc-gateway/) is a tool to expose gRPC endpoints as REST endpoints. For each RPC endpoint defined in a Protobuf service, the SDK offers a REST equivalent. For instance, querying token list could be done via the `/irismod.token.Query/Tokens` gRPC endpoint, or alternatively via the gRPC-gateway `/irismod/token/tokens` REST endpoint: both will return the same result. For each RPC method defined in a Protobuf service, the corresponding REST endpoint is defined as an option:
 
@@ -30,11 +30,11 @@ A [Swagger](https://swagger.io/) (or OpenAPIv2) specification file is exposed un
 
 Enabling the `/swagger` endpoint is configurable inside `~/.fury/config/app.toml` via the `api.swagger` field, which is set to true by default.
 
-For application developers, you may want to generate your own Swagger definitions based on your custom modules. The GRIDhub's [Swagger generation script](https://github.com/fury-zone/fury/blob/master/scripts/protoc-swagger-gen.sh) is a good place to start.
+For application developers, you may want to generate your own Swagger definitions based on your custom modules. The FURYhub's [Swagger generation script](https://github.com/fury-zone/fury/blob/master/scripts/protoc-swagger-gen.sh) is a good place to start.
 
 ## API Endpoints
 
-**GRIDhub API Endpoints**
+**FURYhub API Endpoints**
 
 | API Endpoints                                                                                                                               | Description                                                                                      | Legacy REST Endpoint                                                              |
 | :------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |

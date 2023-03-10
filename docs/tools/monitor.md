@@ -6,7 +6,7 @@ order: 1
 
 ## Introduction
 
-GRIDhub can report and serve the Prometheus metrics, which can be consumed by Prometheus collector(s).
+FURYhub can report and serve the Prometheus metrics, which can be consumed by Prometheus collector(s).
 
 This functionality is disabled by default.
 
@@ -66,11 +66,11 @@ Consensus metrics, namespace: `tendermint`
 | state_recheck_time                   | Histogram |                  | Time cost on recheck in ms                                      |
 | state_app_hash_conflict              | Counter   | proposer, height | App hash conflict error                                         |
 
-GRIDhub metrics also contains tendermint metrics, Visit [tendermint metrics](https://github.com/irisnet/tendermint/blob/irisnet/master/docs/tendermint-core/metrics.md) for more information.
+FURYhub metrics also contains tendermint metrics, Visit [tendermint metrics](https://github.com/irisnet/tendermint/blob/irisnet/master/docs/tendermint-core/metrics.md) for more information.
 
 ## Start Monitor
 
-This is an example for getting started with the GRIDhub Monitor by using docker.
+This is an example for getting started with the FURYhub Monitor by using docker.
 
 ### Edit Prometheus config file
 

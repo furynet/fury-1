@@ -2,7 +2,7 @@
 order: 6
 ---
 
-# GRIDnet Explorers
+# FURYnet Explorers
 
 These block explorers allow you to search, view and analyze FURY Hub data—like blocks, transactions, validators, governance including params or proposals, etc.
 

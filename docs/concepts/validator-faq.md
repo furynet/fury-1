@@ -10,7 +10,7 @@ For general concepts, please refer to [General Concepts](general-concepts.md)
 
 ## General Questions
 
-### How to Become an GRIDhub Validator
+### How to Become an FURYhub Validator
 
 Refer to [Join The Mainnet](../get-started/mainnet.md)
 

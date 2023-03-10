@@ -41,7 +41,7 @@
 * [\#2735](https://github.com/fury-zone/fury/pull/2735) Bump up irismod
 * [\#2734](https://github.com/fury-zone/fury/pull/2734) Bump up TIBC-Go
 * [TIBC-Go \#247](https://github.com/bianjieai/tibc-go/pull/103) Support cross chain MT transfer via TIBC
-* [irismod \#247](https://github.com/irisnet/irismod/pull/247) Added the Farm Proposal function, allowing users to submit on-chain proposals to apply for a specified amount of FURY in GRIDnet’s community pool as farming rewards.
+* [irismod \#247](https://github.com/irisnet/irismod/pull/247) Added the Farm Proposal function, allowing users to submit on-chain proposals to apply for a specified amount of FURY in FURYnet’s community pool as farming rewards.
 * [irismod \#249](https://github.com/irisnet/irismod/pull/249) An added gas fee of 5,000 FURY, with a tax rate of 40%, for the creation of new liquidity pools.
 * [irismod \#245](https://github.com/irisnet/irismod/pull/245) Compatibilized & expanded the functions of the NFT module to match ERC-721 spec, and to support application requirements in a more flexible manner.
 * [irismod \#269](https://github.com/irisnet/irismod/pull/269) Introduced ERC-1155 compatible MT (Multi Token) module
@@ -131,7 +131,7 @@ See the [Tendermint v0.34.7 SDK changelog](https://github.com/tendermint/tenderm
 * [\#2097](https://github.com/fury-zone/fury/issues/2097) Add scripts to migrate genesis data from v0.16.3
 * [\#2090](https://github.com/fury-zone/fury/issues/2090) Refactor guardian module
 * [\#2089](https://github.com/fury-zone/fury/issues/2089) Overwrite mint module
-* [\#2500](https://github.com/fury-zone/fury/issues/2500) Migrate GRIDhub modules to irismod
+* [\#2500](https://github.com/fury-zone/fury/issues/2500) Migrate FURYhub modules to irismod
 * [\#2381](https://github.com/fury-zone/fury/pull/2381) Rebuild fury v1.0 using cosmos-sdk v0.40
 
 ## 0.16.3

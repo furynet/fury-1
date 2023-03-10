@@ -72,9 +72,9 @@ func NewRootCmd() (*cobra.Command, params.EncodingConfig) {
 
 			converter.handlePreRun(cmd, args)
 
-			customTemplate, customGRIDHubConfig := initAppConfig()
+			customTemplate, customFURYHubConfig := initAppConfig()
 			customTMConfig := initTendermintConfig()
-			return server.InterceptConfigsPreRunHandler(cmd, customTemplate, customGRIDHubConfig, customTMConfig)
+			return server.InterceptConfigsPreRunHandler(cmd, customTemplate, customFURYHubConfig, customTMConfig)
 		},
 		PersistentPostRun: func(cmd *cobra.Command, _ []string) {
 			converter.handlePostRun(cmd)
@@ -230,7 +230,7 @@ func (ac appCreator) newApp(logger log.Logger, db dbm.DB, traceStore io.Writer, 
 		cast.ToUint32(appOpts.Get(server.FlagStateSyncSnapshotKeepRecent)),
 	)
 
-	return app.NewGridApp(
+	return app.NewFuryApp(
 		logger, db, traceStore, true, skipUpgradeHeights,
 		cast.ToString(appOpts.Get(flags.FlagHome)),
 		cast.ToUint(appOpts.Get(server.FlagInvCheckPeriod)),
@@ -250,7 +250,7 @@ func (ac appCreator) newApp(logger log.Logger, db dbm.DB, traceStore io.Writer, 
 	)
 }
 
-// createGridappAndExport creates a new furyapp (optionally at a given height) and exports state.
+// createFuryappAndExport creates a new furyapp (optionally at a given height) and exports state.
 func (ac appCreator) appExport(
 	logger log.Logger,
 	db dbm.DB,
@@ -272,7 +272,7 @@ func (ac appCreator) appExport(
 		loadLatest = true
 	}
 
-	furyApp := app.NewGridApp(
+	furyApp := app.NewFuryApp(
 		logger,
 		db,
 		traceStore,

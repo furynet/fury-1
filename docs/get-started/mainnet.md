@@ -133,6 +133,6 @@ Read more:
 
 ## Faucet
 
-Request GRIDnet mainnet tokens from the Faucet powered by Stakely.
+Request FURYnet mainnet tokens from the Faucet powered by Stakely.
 
 For the usage, please refer to the guideline on the Faucet page: https://stakely.io/faucet/irisnet-fury

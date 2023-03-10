@@ -4,7 +4,7 @@ order: 4
 
 # Join The Testnet
 
-After FURY Hub 1.0 upgrade of mainnet, **Nyancat Testnet** starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of GRIDnet can develop their apps on or interact with GRIDhub without running a node or lcd instance.
+After FURY Hub 1.0 upgrade of mainnet, **Nyancat Testnet** starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of FURYnet can develop their apps on or interact with FURYhub without running a node or lcd instance.
 
 ## Public Endpoints
 

@@ -28,7 +28,7 @@ Supposed that Alice swaps BTC for FURY with Bob. The atomic swap process between
 
   The secret will be disclosed while the HTLC is claimed successfully by Bob on Bitcoin. Alice will perfom the same claim to the locked FURY with the secret before the expiration time on FURY Hub.
 
-## GRIDhub HTLC Specification
+## FURYhub HTLC Specification
 
 ### Create HTLC message
 

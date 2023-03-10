@@ -39,11 +39,11 @@ For application developers, Legacy REST API routes needs to be wired up to the R
 | `GET` `/staking/*`                                                           | Staking query endpoints                     | All staking endpoints which return validators have two breaking changes. First, the validator's `consensus_pubkey` field returns an Amino-encoded struct representing an `Any` instead of a bech32-encoded string representing the pubkey. The `value` field of the `Any` is the pubkey's raw key as base64-encoded bytes. Second, the validator's `status` field now returns an int32 instead of string: `1=BOND_STATUS_UNBONDED`, `2=BOND_STATUS_UNBONDING`, `3=BOND_STATUS_BONDED`. |
 | `GET` `/staking/validators`                                                  | Get all validators                          | BondStatus is now a protobuf enum instead of an int32, and JSON serialized using its protobuf name, so expect query parameters like `?status=BOND_STATUS_{BONDED,UNBONDED,UNBONDING}` as opposed to `?status={bonded,unbonded,unbonding}`.                                                                                                                                                                                                                                             |
 
-<sup>1</sup>: Transactions that don't support Amino serialization are the ones that contain one or more `Msg`s that are not registered with the Amino codec. Currently in the GRIDhub, only IBC `Msg`s fall into this case.
+<sup>1</sup>: Transactions that don't support Amino serialization are the ones that contain one or more `Msg`s that are not registered with the Amino codec. Currently in the FURYhub, only IBC `Msg`s fall into this case.
 
 ### Migrating to New REST Endpoints (from Cosmos-SDK v0.39)
 
-**GRIDhub API Endpoints**
+**FURYhub API Endpoints**
 
 | Legacy REST Endpoint                                                              | Description                                                         | New gRPC-gateway REST Endpoint                                                                                |
 | --------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -344,7 +344,7 @@ The same code as integrating with fury-v0.16.3 mainnet. The transaction structur
 }
 ```
 
-Where the GRIDhub address prefix uses `did:fury:aa` instead, which affects the fields:
+Where the FURYhub address prefix uses `did:fury:aa` instead, which affects the fields:
 
 - value.msg.value.from_adress
 - value.msg.value.to_address
